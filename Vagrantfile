@@ -55,7 +55,6 @@ Vagrant.configure("2") do |config|
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
     apt-get update
-    apt-cache policy docker-ce
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
     apt-get -y install docker-ce
     usermod -aG docker vagrant
